@@ -1,7 +1,7 @@
 //given two strings write a function to determine of the second string is an anagram of the first string
 
-let name1 = "icemans";
-let name2 = "ceinema";
+let name1 = " ";
+let name2 = " ";
 
 const validAnagram = (word1, word2) => {
   if (word1.length !== word2.length) return false;
