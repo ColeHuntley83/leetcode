@@ -21,6 +21,6 @@ const sumZero = (arr) => {
 };
 
 
-//commit test yes
+//commit test
 let test = sumZero(data);
 console.log(test);
