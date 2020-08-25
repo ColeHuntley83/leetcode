@@ -24,7 +24,7 @@ const maxSubArray= (arr, num) => {
     let tempSum = 0;
     for (let i = 0; i < num; i++) {
         maxSum += arr[i];
-        debugger;
+        
 
     };
     for (let i = num; i < arr.length; i++) {
