@@ -19,4 +19,4 @@ function searchSubString(str, target) {
   return counter;
 }
 
-console.log(searchSubString("zomgdfsgsjebhdomg omgsdefef omg", "omg"));
+console.log(searchSubString("zomgdfsgsjebhdomg omgsdefef ", "omg"));
