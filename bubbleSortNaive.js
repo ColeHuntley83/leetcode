@@ -9,11 +9,17 @@ function swap(arr, index1, index2) {
 
 function bubbleSort(arr) {
     for (let j = arr.length -1; j >=0; j--) {
+        let done = false;
         for (let i = 0; i < j; i++) {
+            
             if (arr[i] > arr[i +1]) {
+                done = false;
+                count = 1;
                 swap(arr, i, i +1);
+                debugger;
             }
         }
+        if (done) return arr;
     }
     return arr;
 };
