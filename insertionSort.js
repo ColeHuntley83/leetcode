@@ -1,8 +1,8 @@
 const {returnLargeArr} = require('./utils')
-console.log(returnLargeArr)
+
 
 const insertion = (arr) => {
-    debugger
+    let start = new Date().getTime();
     for (let i = 1; i < arr.length; i++) {
         let currentVal = arr[i];
         for (var j = i -1; j >=0 && arr[j] > currentVal; j--) {
@@ -11,9 +11,11 @@ const insertion = (arr) => {
         arr[j + 1] = currentVal;
 
     }
+    var end = new Date().getTime();
+    console.log(`Execution Time: ${end - start} ms`)
     return arr;
 };
 
 
-let result = insertion(returnLargeArr(1000));
+let result = insertion(returnLargeArr(100000));
 console.log(result)

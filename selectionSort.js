@@ -1,12 +1,6 @@
+const {returnLargeArr} = require('./utils')
 
-function returnLargeArr(num) {
-    let storage = [];
-    for (let i = 0; i < num; i++) {
-        let randonNum = Math.floor(Math.random() * 20000 - 200);
-        storage.push(randonNum);
-    };
-    return storage
-};
+
 const swap = (arr, indx1, indx2) => {
     ([arr[indx1], arr[indx2]] = [arr[indx2], arr[indx1]]);
 }
@@ -35,4 +29,4 @@ function selection(arr) {
 };
 
 
-let result = selection(returnLargeArr(10000));
+let result = selection(returnLargeArr(100000));
