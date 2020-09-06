@@ -5,10 +5,12 @@ const insertion = (arr) => {
     let start = new Date().getTime();
     for (let i = 1; i < arr.length; i++) {
         let currentVal = arr[i];
-        for (var j = i -1; j >=0 && arr[j] > currentVal; j--) {
-            arr[j + 1] = arr[j];
+        let j = i -1;
+        while( j>= 0 && arr[j] > currentVal) {
+            arr[j+1] = arr[j]
+            j--;
         }
-        arr[j + 1] = currentVal;
+        arr[j] = currentVal;
 
     }
     var end = new Date().getTime();
