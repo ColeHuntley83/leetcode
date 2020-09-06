@@ -1,4 +1,4 @@
-export default function returnLargeArr(num) {
+ function returnLargeArr(num) {
     let storage = [];
     for (let i = 0; i < num; i++) {
         let randonNum = Math.floor(Math.random() * 20000 - 200);
@@ -7,4 +7,5 @@ export default function returnLargeArr(num) {
     return storage
 };
 
+module.exports = {returnLargeArr}
 
