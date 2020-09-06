@@ -7,7 +7,9 @@ function returnLargeArr(num) {
     };
     return storage
 };
-
+const swap = (arr, indx1, indx2) => {
+    ([arr[indx1], arr[indx2]] = [arr[indx2], arr[indx1]]);
+}
 
 function selection(arr) {
     let start = new Date().getTime();
@@ -20,9 +22,11 @@ function selection(arr) {
             }
         }
         if ( minNum !== i) {
-            let temp = arr[i];
-            arr[i] = arr[minNum];
-            arr[minNum] = temp;
+            // let temp = arr[i];
+            // arr[i] = arr[minNum];
+            // arr[minNum] = temp;
+            // new swap version with destrcuturing
+            swap(arr, i, minNum)
         }
     }
     var end = new Date().getTime();
@@ -31,4 +35,4 @@ function selection(arr) {
 };
 
 
-let result = selection(returnLargeArr(100000));
+let result = selection(returnLargeArr(10000));
