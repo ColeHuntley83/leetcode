@@ -10,7 +10,7 @@ const insertion = (arr) => {
             arr[j+1] = arr[j]
             j--;
         }
-        arr[j] = currentVal;
+        arr[j +1] = currentVal;
 
     }
     var end = new Date().getTime();
@@ -19,5 +19,5 @@ const insertion = (arr) => {
 };
 
 
-let result = insertion(returnLargeArr(100000));
+let result = insertion([9, 8, 7, 6, 5, 4, 3, 2, 1]);
 console.log(result)
